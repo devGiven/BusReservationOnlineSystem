@@ -21,17 +21,17 @@
 					<div class="card-body">
 					<table class="table-borderless" id="driver-field">
 							<colgroup>
-								<col width="2%">
-								<col width="10%">
-								<col width="15%">
-								<col width="15%">
+								<!-- <col width="2%"> -->
+								<col width="4%">
+								<col width="40%">
+								<col width="5%">
 								<col width="15%">
 							</colgroup>
 							<thead class="thead-light">
 								<tr>
-									<th >#</th>
-									<th>Picture</th>
-									<th>Name</th>
+									<!-- <th >#</th> -->
+									<th></th>
+									<th>Full name</th>
 									<th>Licence no</th>
 									<th></th>
 
@@ -78,10 +78,10 @@
 									//tr.append('<td >'+(i++)+'</td>')
 									// <img src="assets/img/drivers/driver1.png" alt="Girl in a jacket" width="70" height="80">
 									// assets/img/driver1.png
-									tr.append('<td> <img src="'+resp[k].image+(x++)+'.png"  alt="id picture" width="70" height="80"> </td>') 
+									tr.append('<td> <img src="'+resp[k].image+(x++)+'.png"  alt="id picture" width="70" height="80" style="border: 1px solid black"> </td>') 
 									//tr.append('<td>' ++'</td>')
 									//tr.append('<td>'+resp[k].image+(x++)+'.png</td>')
-									tr.append('<td>'+resp[k].name+'</td>')
+									tr.append('<td style="font-weight:bold;">'+resp[k].name+'</td>')
 									tr.append('<td >'+resp[k].license_number+'</td>')
 									tr.append('<td ><img src="'+st+'"  alt="id picture" ></td>')
 									/* tr.append('<td><button class="btn btn-sm btn-info edit_bus mr-2" data-id="'+resp[k].id+'">Edit</button><button class="btn btn-sm btn-danger remove_bus" data-id="'+resp[k].id+'">Delete</button></td>')*/
