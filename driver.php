@@ -21,7 +21,7 @@
 					<div class="card-body">
 					<table class="table-borderless" id="driver-field">
 							<colgroup>
-								<col width="5%">
+								<col width="2%">
 								<col width="10%">
 								<col width="15%">
 								<col width="15%">
@@ -33,7 +33,7 @@
 									<th>Picture</th>
 									<th>Name</th>
 									<th>Licence no</th>
-									<th>Status</th>
+									<th></th>
 
 								</tr>
 							</thead>
@@ -75,7 +75,7 @@
 										st = "assets/img/status/offline.png";
 									}
 									var tr = $('<tr></tr>');
-									tr.append('<td >'+(i++)+'</td>')
+									//tr.append('<td >'+(i++)+'</td>')
 									// <img src="assets/img/drivers/driver1.png" alt="Girl in a jacket" width="70" height="80">
 									// assets/img/driver1.png
 									tr.append('<td> <img src="'+resp[k].image+(x++)+'.png"  alt="id picture" width="70" height="80"> </td>') 
